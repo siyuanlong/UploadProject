@@ -83,6 +83,7 @@ public class FileUploadServlet extends HttpServlet {
             while (iterator.hasNext()){
                 //获取当前文件项
                 FileItem fileItem = iterator.next();
+                System.out.println("hello");
                 //判断文件项类型
                 if(fileItem.isFormField()){
                     //如果是文本类型,直接打印文本属性的名称和值
